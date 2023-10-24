@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#container{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            color: white;
+            font-size: 25px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" ondblclick="cliqueDuplo()">
+        Interaja
+    </div>
+
+  <script>
+    var div = document.getElementById('container')
+
+
+    function clicar(){
+        div.innerText = "Clicou"
+        div.style.backgroundColor = "red"
+    }
+
+    function entrar(){
+        div.innerText = "Entrou"
+        div.style.backgroundColor = "black"
+    }
+
+    function sair(){
+        div.innerText = "Saiu"
+        div.style.backgroundColor = "blue"
+    }
+
+    function cliqueDuplo(){
+        div.innerText = "Clicou duas vezes"
+    }
+    
+  </script>  
+</body>
+</html>

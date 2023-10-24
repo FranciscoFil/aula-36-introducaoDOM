@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 id="titulo"> Titulo do meu site </h1>
+
+    <p id="p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis id nam totam magni voluptate ipsam rerum, consequatur voluptatem? Ducimus sit iste blanditiis ratione ipsum hic quia eos, libero eaque? </p>
+
+    <script>
+        var titulo = window.document.getElementById('titulo')
+
+        var paragrafo = window.document.getElementById(`p`)
+
+        var nome = "Victor"
+
+        titulo.innerText = `O ${nome} que mudou esse titulo`
+
+        titulo.style.color = "red"
+
+        paragrafo.innerText = "Esse agora é o meu paragrafo"
+
+        paragrafo.style.border = "2px solid red"
+    </script>
+</body>
+</html>
